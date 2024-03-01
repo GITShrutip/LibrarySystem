@@ -1,0 +1,17 @@
+<!-- entity_form.html -->
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Entity</title>
+</head>
+<body>
+    <h2>Add Entity</h2>
+    <form action="#" th:action="@{/entities}" th:object="${entity}" method="post">
+        <!-- Other fields as needed -->
+        <label>String Values:</label>
+        <input type="text" th:field="*{stringValues}" />
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
